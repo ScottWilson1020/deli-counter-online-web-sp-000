@@ -1,4 +1,5 @@
 # Write your code here.
 katz_deli = []
 
-def katz deli
+def line(katz_deli)
+  
