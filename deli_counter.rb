@@ -2,13 +2,12 @@
 katz_deli = []
 
 def line(katz_deli)
-  line positions = 0 
-  if katz_deli.empty
+  line_positions = [];
+  if katz_deli.empty?
     puts "The line is currently empty."
-    
-  else 
-    number = 1 
-    katz_deli each.do |customer|
+  else
+    number = 1
+    katz_deli.each do |customer|
       line_positions << "#{number}. #{customer}"
       number += 1
     end
@@ -20,3 +19,4 @@ def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
+
